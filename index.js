@@ -4,7 +4,7 @@ function distanceFromHqInBlocks(location){
     return Math.abs(location - hqLocation);
 }
 function distanceFromHqInFeet(location){
-    return Math.abs(distanceFromHqInBlocks() * 264)
+    return Math.abs(distanceFromHqInBlocks(location) * 264)
 }
 function distanceTravelledInFeet(start, destination){
     return Math.abs((destination - start) * 264);  
